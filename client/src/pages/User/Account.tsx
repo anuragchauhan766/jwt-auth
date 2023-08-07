@@ -1,4 +1,4 @@
-// import { authHttpClient } from "@config/axiosConfig";
+
 import useAuthHttpClient from "@src/hooks/useAuthHttpClient";
 import { UserDataType } from "@src/types/User";
 import { isAxiosError } from "axios";

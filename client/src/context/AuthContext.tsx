@@ -16,10 +16,11 @@ import {
 
 import { isAxiosError } from "axios";
 import { UserDataType } from "../types/User";
-import { authHttpClient, httpClient } from "@config/axiosConfig";
+import { httpClient } from "@config/axiosConfig";
 
 import { setAccesstoken } from "@src/helper/Token";
 import { useNavigate } from "react-router-dom";
+import useAuthHttpClient from "@src/hooks/useAuthHttpClient";
 
 const AuthContext = createContext<AuthContextType>({} as AuthContextType);
 
@@ -27,6 +28,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   const [user, setUser] = useState<Partial<UserDataType> | undefined>(
     undefined
   );
+  const authHttpClient = useAuthHttpClient();
   const getUserdetail = () => {
     authHttpClient
       .get("/user")
@@ -35,6 +37,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   };
   useEffect(() => {
     getUserdetail();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const navigate = useNavigate();
