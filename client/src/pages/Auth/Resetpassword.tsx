@@ -60,11 +60,8 @@ function Resetpassword() {
   });
 
   return (
-    <div className="w-full  flex  justify-center bg-gradient-to-r from-neutral-800 to-neutral-900 p-8">
-      <div className="w-full max-w-3xl  bg-black rounded-xl text-white p-2 sm:p-20 sm:pt-0 flex flex-col items-center">
-        <div className="w-full flex items-center justify-center my-10"></div>
-        <hr className="w-full  border-t-2 border-t-orange-200 my-10" />
-
+    <div className="w-full h-screen flex  justify-center p-8">
+      <div className="w-full max-w-3xl  bg-light-blue rounded-xl text-white p-2 sm:p-20 flex flex-col items-center">
         <h1 className="text-center font-bold text-2xl sm:text-5xl  sm:mt-0 my-10">
           Password Reset
         </h1>

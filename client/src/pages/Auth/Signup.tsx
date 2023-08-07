@@ -6,8 +6,7 @@ import Signupform from "@components/Form/Signupform";
 function Signup() {
   return (
     <div className="w-full  flex  justify-center  p-8 ">
-      <div className="w-full max-w-3xl  bg-light-blue rounded-xl text-white p-2 sm:p-20 sm:pt-0 ">
-        <div className="w-full flex items-center justify-center my-10"></div>
+      <div className="w-full max-w-3xl  bg-light-blue rounded-xl text-white p-2 sm:p-20  ">
         <h1 className="text-center font-bold text-2xl sm:text-5xl  sm:mt-0 my-10">
           Signup
         </h1>

@@ -20,11 +20,8 @@ function EmailVerfication() {
   };
 
   return (
-    <div className="w-full flex flex-col items-center justify-center space-y-20 sm:space-y-52 ">
-      <div className="flex bg-primary-main justify-center items-center p-5 w-full">
-        {/* <img src={logo} alt="soundify-logo" className=" w-40 sm:w-60" /> */}
-      </div>
-      <div className="w-3/4 sm:w-1/2 p-5 bg-slate-100 rounded-lg shadow-xl ">
+    <div className="w-full h-screen flex flex-col items-center justify-center space-y-20 sm:space-y-52 ">
+      <div className="w-3/4 sm:w-1/2 p-5 bg-light-blue rounded-lg shadow-xl text-white">
         {isverified ? (
           <div className="flex flex-col items-center justify-center space-y-4">
             <p className="text-2xl font-bold ">Email verified Successfully.</p>
@@ -33,7 +30,7 @@ function EmailVerfication() {
               <Link
                 component={RouterNavLink}
                 to="/auth/signin"
-                className="text-blue-600 hover:text-lg"
+                className="text-white hover:text-lg"
               >
                 Login Now.
               </Link>
@@ -45,10 +42,10 @@ function EmailVerfication() {
           </div>
         ) : (
           <div className="w-full flex flex-col items-center justify-center space-y-5">
-            <h1 className="text-2xl sm:text-4xl font-bold ">
+            <h1 className="text-2xl sm:text-5xl font-bold ">
               Email Verification
             </h1>
-            <p className="text-md text-center sm:text-lg font-light">
+            <p className="text-sm text-center sm:text-lg font-light">
               Click on the Link below to Verify Your email.
             </p>
             <button
