@@ -11,8 +11,7 @@
     "start": "node dist/server.js"
   },
   "engines": {
-    "node": "18.x",
-    "pnpm": "8.x"
+    "node": "18.x"
   },
   "author": "",
   "license": "ISC",
