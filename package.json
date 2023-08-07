@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
-    "node": ">=18"
+    "node": "18.x",
+    "pnpm": "8.x"
   },
   "author": "Anurag Singh Chauhan",
   "license": "ISC"
