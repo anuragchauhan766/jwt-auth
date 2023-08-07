@@ -16,7 +16,7 @@ const app = express();
 app.use(json());
 app.use(
   cors({
-    origin: ["http://localhost:5173", "https://soundify-n23d.onrender.com"],
+    origin: ["http://localhost:5173", process.env.CLIENT_BASE_URL as string],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
