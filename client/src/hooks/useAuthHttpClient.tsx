@@ -14,7 +14,7 @@ const useAuthHttpClient = () => {
       "Content-Type": "application/json",
     },
   });
-  console.log(authHttpClient);
+
   const refreshAccessToken = async () => {
     try {
       const response = await httpClient.get<AuthResponse>("/auth/refresh");
