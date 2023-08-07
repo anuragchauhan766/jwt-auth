@@ -21,6 +21,7 @@ This JWT Authentication System serves as a backend-focused project to demonstrat
 > ### Note
 
 > For development and project showcase, the expiration time of tokens is kept short
+>
 > - Access token: 30 seconds
 > - Refresh token: 2 minutes
 > - reset password token: 3 minutes
