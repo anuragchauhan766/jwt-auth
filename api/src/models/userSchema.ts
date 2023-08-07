@@ -93,14 +93,14 @@ userSchema.methods = {
       { id: this._id },
       process.env.ACCESS_TOKEN_SECRET_KEY as string,
       {
-        expiresIn: "15s",
+        expiresIn: "30s",
       }
     );
     const refreshToken = jwt.sign(
       { id: this._id },
       process.env.REFRESH_TOKEN_SECRET_KEY as string,
       {
-        expiresIn: "1min",
+        expiresIn: "2min",
       }
     );
     return { accessToken, refreshToken };
@@ -115,7 +115,7 @@ userSchema.methods = {
       },
       process.env.RESET_PASSWORD_SECRET_KEY as string,
       {
-        expiresIn: "1min",
+        expiresIn: "3min",
       }
     );
     this.resetPasswordToken = randomstring;
@@ -132,7 +132,7 @@ userSchema.methods = {
       },
       process.env.ACTIVATION_SECRET_KEY as string,
       {
-        expiresIn: "1d",
+        expiresIn: "30min",
       }
     );
 
