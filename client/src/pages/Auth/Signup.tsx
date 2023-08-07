@@ -15,7 +15,7 @@ function Signup() {
         <div className="text-sm w-full text-center my-10">
           <span>Already have an account? </span>
           <Link to="/auth/signin" component={RouterNavLink}>
-            <span className="text-ctc">Sign in</span>
+            <span className="text-ctc ">Sign in</span>
           </Link>
         </div>
       </div>

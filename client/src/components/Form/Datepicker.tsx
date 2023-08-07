@@ -33,7 +33,7 @@ function Datepicker({
       <DatePicker
         format="DD-MM-YYYY"
         views={["year", "month", "day"]}
-        value={dayjs(value) && null}
+        value={value ? dayjs(value) : null}
         onChange={(newDate) => {
           setFieldValue("dob", dayjs(newDate).format("DD-MM-YYYY"), true);
         }}

@@ -36,7 +36,7 @@ export const sendMail = async (
 
   const mailOptions: SendMailOptions & TemplateOptions = {
     from: {
-      name: "Soundify",
+      name: "JWT Auth",
       address: process.env.NODEMAIL_EMAIL_FROM as string,
     },
     to: to,

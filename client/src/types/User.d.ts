@@ -8,7 +8,7 @@ export interface SignupDataType extends LoginDataType {
   gender: string;
   password: string;
 }
-export interface UserDataType extends SignupDataType {
+export interface UserDataType extends Omit<SignupDataType, "password"> {
   _id: string;
   isVerified: boolean;
 }

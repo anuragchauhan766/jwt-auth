@@ -27,15 +27,14 @@ export const authenticate: RequestHandler = async (
       process.env.ACCESS_TOKEN_SECRET_KEY as string
     ) as JwtPayload;
 
-    const user = await User.findById(decoded.id);
+    const user = await User.findById(decoded.id).select([
+      "-password",
+      "-isVerified",
+    ]);
     if (!user) {
       return next(new ErrorResponse("User not exists", 404));
     }
-    req.user = {
-      _id: user._id,
-      name: user.name,
-      email: user.email,
-    };
+    req.user = user;
     next();
   } catch (error) {
     next(error);

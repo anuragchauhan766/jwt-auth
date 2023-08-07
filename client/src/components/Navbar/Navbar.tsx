@@ -1,5 +1,6 @@
 import { Link } from "@mui/material";
 import { NavLink as RouterNavLink } from "react-router-dom";
+import UserSection from "./UserSection";
 
 function Navbar() {
   return (
@@ -12,28 +13,8 @@ function Navbar() {
             </span>
           </Link>
         </li>
-        <li className="grow-0 basis-auto shrink-0">
-          <Link
-            to="/auth/signin"
-            className="text-white"
-            component={RouterNavLink}
-          >
-            <span className="drop-shadow-[0_0_5px_rgba(255,255,255,0.25)] hover:drop-shadow-[0_0_5px_rgba(255,255,255,0.5)] ">
-              Signin
-            </span>
-          </Link>
-        </li>
-        <li className="grow-0 basis-auto shrink-0">
-          <Link
-            to="/auth/signup"
-            className="text-white"
-            component={RouterNavLink}
-          >
-            <span className="shadow-lg drop-shadow-[0_0_5px_rgba(255,255,255,0.25)] hover:drop-shadow-[0_0_5px_rgba(255,255,255,0.5)]">
-              Signup
-            </span>
-          </Link>
-        </li>
+
+        <UserSection />
       </ul>
     </nav>
   );
