@@ -19,9 +19,8 @@ This repository contains a JWT (JSON Web Token) Authentication System developed 
 This JWT Authentication System serves as a backend-focused project to demonstrate the workings of JWT and session management in a MERN application. JSON Web Tokens are used to authenticate users and maintain their sessions securely. The system implements access and refresh tokens, each with different expiration times, to achieve improved security and usability.
 
 > ### Note
->
+
 > For development and project showcase, the expiration time of tokens is kept short
->
 > - Access token: 30 seconds
 > - Refresh token: 2 minutes
 > - reset password token: 3 minutes
